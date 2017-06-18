@@ -73,7 +73,7 @@ var pf_ini={
 		}
 	},
 	in_number_hunders_specify:function(nmb){
-		//console.log(nmb);
+		
 		var nmb_str="";
 		var hndr_flr=Math.floor(nmb/100);	
 		var tnth_flr=nmb-(hndr_flr*100);
@@ -83,18 +83,16 @@ var pf_ini={
 		}else{
 			if(tnth_flr>0){
 				if(tnth_flr>10 && tnth_flr<20){
-			//?	console.log(pf_ini.tenth_by(tnth_flr));
+			
 				nmb_str+=pf_ini.tenth_by(tnth_flr);
 			}else{
 				
 				var tnth_v=pf_ini.tenth_by(Math.floor(tnth_flr/10)*10);
 				var ones_v=pf_ini.tenth_by(tnth_flr-(Math.floor(tnth_flr/10)*10));
 			
-				//nmb_str+=tnth_v+" ";
+				
 			nmb_str+=(tnth_v+" "+ones_v);
-				//nmb_str+=ones_v+"";
-			
-			//	console.log(tnth_flr+"=tenth:"+tnth_v+" "+ones_v);
+				
 				
 			}
 				
@@ -102,7 +100,7 @@ var pf_ini={
 		}	
 		
 
-		//console.log(nmb_str+"=");
+
 
 		return nmb_str;
 	},
@@ -111,7 +109,7 @@ var pf_ini={
 		var whl_nmbr=Math.floor(nmb/pf_ini.round_by_thousands(nmb,3,"000"));
 		var rmdr_nmbr=Math.floor(nmb%pf_ini.round_by_thousands(nmb,3,"000"));
 		var thnd_str=pf_ini.tenth_by(pf_ini.round_by_thousands(nmb,3,"000"),pf_ini.round_by_thousands(nmb,3,"000")!=1);
-	//	console.log(pf_ini.in_number_hunders_specify(whl_nmbr)+"- "+thnd_str);
+	
 		nmbr_str+=pf_ini.in_number_hunders_specify(whl_nmbr)+" "+thnd_str;
 
 
@@ -152,7 +150,7 @@ var pf_extra={}
 		else{
 		return pf_ini.in_number_specify(number_s);
 		}
-		//console.log( );
+	
 	}
 
 window.__wbspprt=pf_extra;
