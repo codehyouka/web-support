@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Table</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="https://rawgit.com/codehyouka/needjs/1.1.0.4/prod/need.js"></script>
+       
+    </head>
+    <body >
+        words:900
+        will be <u><span id="word_900"></span></u>
+        <br>Syntax:
+        <code>
+            __wbspprt.money_in_words(900);
+        </code>
+        <br>
+        <hr>
+        words:1205
+        will be <u><span id="word_1205"></span></u>
+        <br>Syntax:
+        <code>
+            __wbspprt.money_in_words(1205);
+        </code>
+        <br>
+        <hr>
+         words:1550205
+        will be <u><span id="word_1550205"></span></u>
+        <br>Syntax:
+        <code>
+            __wbspprt.money_in_words(1550205);
+        </code>
+        <br>
+        <hr>
+         <script src="../../src/basic_words_convertion/money_to_words.js"></script>
+         <script>
+            document.getElementById("word_900").innerHTML=__wbspprt.money_in_words(900);
+            document.getElementById("word_1205").innerHTML=__wbspprt.money_in_words(1205);
+            document.getElementById("word_1550205").innerHTML=__wbspprt.money_in_words(1550205);
+         </script>
+    </body>
+</html>

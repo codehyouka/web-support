@@ -1,0 +1,8 @@
+{
+    "name": "web-support",
+    "version": "1.0.0",
+    "keywords": ["frontend","js","css", "browser"],
+    "author": "pein",
+    "contributors": [],
+    "dependencies": {}
+}
